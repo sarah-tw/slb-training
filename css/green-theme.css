@@ -1,0 +1,42 @@
+
+.reveal p,
+.reveal div,
+.reveal h2,
+.reveal h3,
+.reveal section {
+	font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif !important;
+}
+.reveal .controls div.navigate-right, 
+.reveal .controls div.navigate-right.enabled,
+.reveal .controls div.navigate-right.enabled:hover{
+	border-left-color: #319b42;
+}
+.reveal .controls div.navigate-left, 
+.reveal .controls div.navigate-left.enabled,
+.reveal .controls div.navigate-left.enabled:hover{
+	border-right-color: #319b42;
+}
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled{
+	border-bottom-color: #319b42;
+}
+.reveal .controls div.navigate-down, 
+.reveal .controls div.navigate-down.enabled,
+.reveal .controls div.navigate-down.enabled:hover {
+	border-top-color: #319b42;
+}
+.reveal .progress span {
+	background-color: #319b42;
+}
+.reveal h2 {
+	padding: 16px;
+	border-top: 4px solid #319b42;
+	border-bottom: 4px solid #319b42;
+}
+.reveal h3 {
+	padding-bottom: 16px;
+	border-bottom: 4px solid #319b42;	
+}
+.pull-left {
+	float: left;
+}
