@@ -104,9 +104,10 @@
                         </section>
                         <section>
                             <h3>Example</h3>
-                            <p>define, attribute</p>
+                            <p>definition, attributes</p>
                         </section>
                     </section>
+
                     <section>
                         <section>
                             <h3>Function</h3>
@@ -115,55 +116,18 @@
 
                         <section>
                             <h3>Example</h3>
-                            <p>function define(key words, parameters, return value, as object, as attribute), run</p>
+                            <p>function definition(key words, parameters, return value, as object, as attribute), run</p>
                         </section>
 
                         <section>
-                            <h3>High-order Functions</h3>
-                            <p>aka Callback Functions</p>
-                        </section>
-                        <section data-markdown>
-                            <pre><code>
-                        $("#btn_1").click(function() {
-                            alert("Btn 1 Clicked");
-                        });
-                            </code></pre>
-                        </section>
-                        <section data-markdown>
-        <pre><code>
-                var array = [1, 2, 4, 8, 16, 32, 64, 128];
-        </code></pre>
-                        </section>
-
-                        <section data-markdown>
-        <pre><code>
-
-            var array = [1, 2, 4, 8, 16, 32, 64, 128];
-
-            function multiplyBy(array, num) {
-            var result = new Array(); 
-
-            for(var i = 0, len = array.length; i < len; i++) {
-            result.push(array[i] * num); 
-            }
-
-            return result;
-            }
-
-            multiplyBy(array, 4);
-
-        </code></pre>
-                        </section>
-
-                        <section>
-        <pre><code>
-            var array = [1, 2, 4, 8, 16, 32, 64, 128];
-            var num = 4;
-
-            array.map(function(item) {
-                return item * num;
-            });
-        </code></pre>
+                            <h3>Callback Function</h3>
+                            <p data-markdown>
+                    <pre><code>
+                $("#btn_1").click(function() {
+                    alert("Btn 1 Clicked");
+                });
+                    </code></pre>
+                            </p>
                         </section>
                     </section>
 
