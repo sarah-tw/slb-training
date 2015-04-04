@@ -1,373 +1,542 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>JavaScript 101</title>
+    <title>JavaScript 101</title>
 
-		<meta name="description" content="A presentation for JavaScript beginers">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A presentation for JavaScript beginers">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/night.css" id="theme">
-		<link rel="stylesheet" href="css/pink-theme.css" id="theme">
-
-
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
-					<h2>JavaScript 101</h2>
-      		<p>Wang Ni</p>
-				</section>
-
-				<section>
-					<section>
-						<h3>Know this t-shirt ?</h3>
-						<img src="images/t-shirts.jpg" alt="" />
-					</section>
-
-					<section>
-						<p>With CSS we could ...</p>
-					</section>
-
-					<section>
-						<img src="images/first-day.png" alt="" height="600"/>
-					</section>
-
-					<section>
-						<img src="images/third-day.png" alt="" height="600"/>
-					</section>
-
-					<section>
-						<p>But ...</p>
-					</section>
-
-					<section>
-						<p>THERE IS NO <strong style="color:#f04e98">INTERACTION</strong> !</p>
-					</section>
-				</section>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="css/pink-theme.css" id="theme">
 
 
-				<section>
-					<img src="images/js-logo.png" width="300" style="background: inherit; border: none; box-shadow: none;"/>
-					<p>JavaScript</p>
-				</section>
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
         <section>
-            <h3>JavaScript in a nutshell</h3>
-						<img src="images/JavaScript-logo.png" alt="" width="200" style="float: left; margin-right:10px;"/>
-            <p>A <strong style="color:#f04e98">scripting language</strong> that is interpreted by the browser engine when the web page is loaded.</p>
-            <p style="display: none">Gives you the freedom to add interactivity and responsiveness to your web pages.</p>
-            <p style="display: none">JavaScript gives you the freedom to add interactivity and responsiveness to your web pages.</p>
+            <p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
+
+            <h2>JavaScript 101</h2>
+
+            <p>Wang Ni</p>
         </section>
 
         <section>
-						<section>
-							<p><span style='color:#f04e98'>Hello World</span> in JavaScript</p>
-						</section>
+            <section>
+                <h3>Know this t-shirt ?</h3>
+                <img src="images/t-shirts.jpg" alt=""/>
+            </section>
 
-						<section>
-							<p>wait..</p>
-							<p class='fragment roll-in'><span style='color:#f04e98'>Where</span> should we put JavaScript code ?</p>
-						</section>
+            <section>
+                <img src="images/first-day.png" alt="" height="600"/>
+            </section>
 
-						<section>
+            <section>
+                <img src="images/third-day.png" alt="" height="600"/>
+            </section>
+
+            <section>
+                <p>THERE IS NO <strong style="color:#f04e98">INTERACTION</strong> !</p>
+            </section>
+        </section>
+
+
+        <section>
+            <img src="images/js-logo.png" width="300" style="background: inherit; border: none; box-shadow: none;"/>
+
+            <p>JavaScript</p>
+
+            <p style="font-size: 60%;">aka LiveScript, aka ECMAScript</p>
+        </section>
+
+        <section>
+            <section>
+                <h3>JavaScript in a nutshell</h3>
+                <img src="images/JavaScript-logo.png" alt="" width="200" style="float: left; margin-right:10px;"/>
+
+                <p>A <strong style="color:#f04e98">scripting language</strong> that is interpreted by the browser engine
+                    when
+                    the web page is loaded.</p>
+            </section>
+
+            <section>
+                <p>Are JavaScript and Java the same ?</p>
+
+                <p class='fragment roll-in' style='color:#f04e98'>No.</p>
+            </section>
+
+            <section>
+                <p>Is JavaScript only used in frontend ?</p>
+
+                <p class='fragment roll-in' style='color:#f04e98'>No.</p>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h4><span style='color:#f04e98'>Hello World</span> in JavaScript</h4>
+            </section>
+
+            <section>
+                <p>wait, <span style='color:#f04e98'>where</span> should we put JavaScript code ?</p>
+
+                <p class='fragment roll-in' style='color:#f04e98'>HTML</p>
+                <img class='fragment roll-in' src="images/js-in-html.png" width="500"
+                     style="border: 2px solid #8F8C8C"/>
+            </section>
+
+            <section>
                 <h3>JavaScript in &#60;head&#62;</h3>
-								<img src="images/hello-world-1.png" width="600" style="border: 2px solid #8F8C8C"/>
+                <img src="images/hello-world-1.png" width="600" style="border: 2px solid #8F8C8C"/>
             </section>
 
-						<section>
+            <section>
                 <h3>JavaScript in &#60;body&#62;</h3>
-								<img src="images/hello-world-2.png" width="600" style="border: 2px solid #8F8C8C"/>
+                <img src="images/hello-world-2.png" width="600" style="border: 2px solid #8F8C8C"/>
             </section>
 
-						<section>
-								<h3>External JavaScript</h3>
-								<img src="images/hello-world-3.png" width="600" style="border: 2px solid #8F8C8C"/>
-						</section>
+            <section>
+                <h3>External JavaScript</h3>
+                <img src="images/hello-world-3.png" width="600" style="border: 2px solid #8F8C8C"/>
+            </section>
 
-						<section>
-							<p>Which way do we prefer ?</p>
-						</section>
+            <section>
+                <p>Which way do we prefer ?</p>
+            </section>
 
-						<section>
-							<h3>External JavaScript</h3>
-							<ul style='font-size: 80%'>
-								<li class='fragment roll-in'>It separates HTML and code</li>
-								<li class='fragment roll-in'>It makes HTML and JavaScript easier to read and maintain</li>
-								<li class='fragment roll-in'>Cached JavaScript files can speed up page loads</li>
-							</ul>
-						</section>
+            <section>
+                <h3>External JavaScript</h3>
+                <ul style='font-size: 80%'>
+                    <li class='fragment roll-in'>It separates HTML and code</li>
+                    <li class='fragment roll-in'>It makes HTML and JavaScript easier to read and maintain</li>
+                    <li class='fragment roll-in'>Cached JavaScript files can speed up page loads</li>
+                </ul>
+            </section>
 
-						<section>
-								<p class='fragment current-visible'>All set ?</p>
-								<p class='fragment roll-in'>Time to write some <span style='color:#f04e98'>CODE</span>.</p>
-								<p class='fragment roll-in'> YAY !</p>
-						</section>
+            <section>
+                <p>All set ?</p>
+                <p class='fragment roll-in'>Let's learn <span style='color:#f04e98'>JavaScript</span>. :)</p>
+            </section>
         </section>
 
-				<section>
-					<section>
-							<h4>JavaScript as a <span style='color:#f04e98'>Programming Language</span></h4>
-					</section>
+        <section>
+            <section>
+                <h4>JavaScript as a <span style='color:#f04e98'>Programming Language</span></h4>
+            </section>
 
-					<section>
-							<p>You may have some questions..</p>
-					</section>
+            <section>
+                <h4>C like Syntax</h4>
+            </section>
 
-					<section>
-	            <p>Are JavaScript and Java the same ?</p>
-							<p class='fragment roll-in' style='color:#f04e98'>No.</p>
-	        </section>
-	        <section>
-	            <p>Is JavaScript only used in frontend ?</p>
-							<p class='fragment roll-in' style='color:#f04e98'>No.</p>
-	        </section>
-	        <section>
-	            <p>Is JavaScript Object Oriented ?</p>
-							<p class='fragment roll-in' style='color:#f04e98'>No.</p>
-	        </section>
+            <section>
+                <h4>Variable</h4>
+            </section>
 
-					<section>
-							<p>... ?</p>
-							<img src="images/js-as-a-language.jpg" class="fragment current-visible" width=400 />
-					</section>
+            <section>
+                <h3>Define a variable</h3>
+                <img src="images/var-define.png" width=300 style="border: 2px solid #8F8C8C;"/>
+            </section>
 
-				</section>
+            <section>
+                <h4>What kind of <span style='color:#f04e98'>data</span> a variable could hold ?</h4>
+                <ul style='font-size: 80%; margin-right: 15%; color: #f04e98'>
+                    <li class='fragment roll-in'>Primitive values</li>
+                    <li class='fragment roll-in'>Non-Primitive/Reference values</li>
+                </ul>
+            </section>
+            <section >
+                <h3>Primitive Types and Values</h3>
+                <ul style="margin-right: 30%; font-size: 80%">
+                    <li><strong style="color:#f04e98;">string</strong> "foo", 'foo', ""</li>
+                    <li><strong style="color:#f04e98;">number</strong> 0, 3.14, NaN, Infinity</li>
+                    <li><strong style="color:#f04e98;">boolean</strong> true, false</li>
+                    <li><strong style="color:#f04e98;">undefined</strong> undefined</li>
+                    <li><strong style="color:#f04e98;">null</strong>  null</li>
+                </ul>
+            </section>
 
-				<section>
-					<section>
-						<h3>JavaScript Basics</h3>
-						<ul style='font-size: 80%; margin-right: 5%'>
-							<li class='fragment roll-in'>Syntax</li>
-							<li class='fragment roll-in'>Object</li>
-						</ul>
-						<ul style='font-size: 80%'>
-							<li class='fragment roll-in'>Function</li>
-							<li class='fragment roll-in'>Scope</li>
-						</ul>
-					</section>
+            <section>
+                <h3>Non-Primitive/Reference Values</h3>
+                <ul style="margin-right: 30%; font-size: 80%">
+                    <li><strong style="color:#f04e98;">Object</strong></li>
+                    <li><strong style="color:#f04e98;">Array</strong></li>
+                    <li><strong style="color:#f04e98;">function</strong></li>
+                    <li><strong style="color:#f04e98;">Build-in</strong> String, Boolean, Number, Date ...</li>
+                </ul>
+            </section>
 
-					<section>
-						<h3>Syntax - C like</h3>
-							<p class='fragment roll-in'>loop for</p>
-							<p class='fragment roll-in'>loop while</p>
-							<p class='fragment roll-in'>loop switch</p>
-							<p class='fragment roll-in'>condition</p>
-							<p class='fragment roll-in'>booleans</p>
-							<p class='fragment roll-in'>comment</p>
-							<p class='fragment roll-in'>...</p>
-					</section>
+            <section>
+                <h4>typeof</h4>
+            </section>
 
-					<section>
-						<h3>Syntax - Variables & Data Types</h3>
-						<img class='fragment current-visible' src="images/syntax-1.png" width=700 style="border: 2px solid #8F8C8C; position: absolute; right: 12%;"/>
-						<img class='fragment current-visible' src="images/syntax-2.png" width=700 style="border: 2px solid #8F8C8C; position: absolute; right: 12%;"/>
-						<img class='fragment current-visible' src="images/syntax-5.png" width=500 style="border: 2px solid #8F8C8C; position: absolute; right: 23%;"/>
-						<img class='fragment current-visible' src="images/syntax-3.png" width=500 style="border: 2px solid #8F8C8C; position: absolute; right: 23%;"/>
-						<img class='fragment current-visible' src="images/syntax-4.png" width=500 style="border: 2px solid #8F8C8C; position: absolute; right: 23%;"/>
-						<img class='fragment current-visible' src="images/syntax-6.png" width=500 style="border: 2px solid #8F8C8C; position: absolute; right: 23%;"/>
-					</section>
+            <section>
+                <img src="images/typeof-for-primitive-values.png" width="350" style="border: 2px solid #8F8C8C;"/>
+            </section>
 
-					<section>
-							<h3>Object - {}</h3>
-							<img class='fragment current-visible' src="images/object-1.png" style="border: 2px solid #8F8C8C; position: absolute; right: 33%;"/>
-							<img class='fragment current-visible' src="images/object-2.png" style="border: 2px solid #8F8C8C; position: absolute; right: 33%;"/>
-					</section>
+            <section>
+                <img src="images/typeof-objects.png" width="500" style="border: 2px solid #8F8C8C;"/>
+            </section>
 
-					<section>
-							<h3>Function - Definition & ()</h3>
-							<img class='fragment current-visible' src="images/func-1.png" width=500 style="border: 2px solid #8F8C8C; position: absolute; right: 23%;"/>
-							<img class='fragment current-visible' src="images/func-2.png" width=500 style="border: 2px solid #8F8C8C; position: absolute; right: 23%;"/>
-							<img class='fragment current-visible' src="images/func-3.png" width=500 style="border: 2px solid #8F8C8C; position: absolute; right: 23%;"/>
-					</section>
+            <section>
+                <h4><span style="color:#f04e98;">Quiz</span> Time!</h4>
+            </section>
 
-					<section>
-						<h3>Function - as Object Methods</h3>
-						<img src="images/func-5.png" width=700 style="border: 2px solid #8F8C8C;"/>
-						<p class='fragment roll-in'>What's "<span style="color: #f04e98;">this</span>" ?</p>
-					</section>
+            <section>
+                <p><span style="color:#f04e98;">Q1: </span>What's the result of <span style='font-style: italic'>typeof(name)</span> after each line ?</p>
+                <img src="images/typeof-for-eachline.png" width="400" style="border: 2px solid #8F8C8C;"/>
+                <p>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">undefined,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">undefined,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">string,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">number</span>
+                </p>
 
-					<section>
-							<h3>Function - as Parameter</h3>
-							<img src="images/func-4.png" width=500 style="border: 2px solid #8F8C8C;"/>
-					</section>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Q2: </span>What's the addition result?</p>
+                <img src="images/quiz-5.png" width="400" style="border: 2px solid #8F8C8C;"/>
+                <p>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">2,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">"11",</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">"21",</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">"111"</span>
+                </p>
 
-					<section>
-						<p>
-							Basically, everything is <span style="color: #f04e98;">Variable</span>.
-						</p>
-					</section>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Q3: </span>And ?</p>
+                <img src="images/quiz-6.png" width="400" style="border: 2px solid #8F8C8C;"/>
+                <p>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">2,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">"true1",</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">0,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">"-11",</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">NaN</span>
+                </p>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Q4: </span>Are they equal to each other?</p>
+                <img src="images/quiz-1.png" width="500" style="border: 2px solid #8F8C8C;"/>
+                <p>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">false</span>
+                </p>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Q5: </span>What about those?</p>
+                <img src="images/quiz-3.png" width="400" style="border: 2px solid #8F8C8C;"/>
+                <p>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">false</span>
+                </p>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Q6: </span>hmmm... === ?</p>
+                <img src="images/quiz-4.png" width="500" style="border: 2px solid #8F8C8C;"/>
+                <p>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">false,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">true,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">false,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">false,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">false</span>
+                </p>
+            </section>
 
-					<section>
-							<h3>Scope - Local</h3>
-							<img src="images/scope-1.png" width=500 style="border: 2px solid #8F8C8C;"/>
-					</section>
+            <section>
+                <p>ok...  let's move on...</p>
+            </section>
+            <section>
+                <h4>Primitives, Object, Array, Function</h4>
+                <h4 class="fragment roll-in">Scope</h4>
+            </section>
 
-					<section>
-							<h3>Scope - Global</h3>
-							<img src="images/scope-2.png" width=500 style="border: 2px solid #8F8C8C;"/>
-					</section>
+            <section>
+                <h4>Object</h4>
+            </section>
 
-					<section>
-							<h3>Scope - Automatically Global</h3>
-							<img src="images/scope-3.png" width=500 style="border: 2px solid #8F8C8C;"/>
-					</section>
+            <section>
+                <h3>Object</h3>
+                <img width="400" src="images/object-define.png" style="border: 2px solid #8F8C8C;"/>
+            </section>
+            <section>
+                <h3>Object Literal</h3>
+                <img width="400" src="images/object-literal.png" style="border: 2px solid #8F8C8C;"/>
+            </section>
 
-					<section>
-						<h3>Lifetime of Variables</h3>
-						<ul>
-							<li class='fragment roll-in'>Starts when it is declared.</li>
-							<li class='fragment roll-in'>For <span style="color: #f04e98;">local variables</span>, deleted when the function is completed.</li>
-							<li class='fragment roll-in'>For <span style="color: #f04e98;">global variables</span>, deleted when the page is closed.</li>
-						</ul>
-					</section>
+            <section>
+                <h4>Array</h4>
+            </section>
 
-					<section>
-							<h3>Quiz</h3>
-					</section>
+            <section>
+                <h3>Array</h3>
+                <img src="images/array-define.png" style="border: 2px solid #8F8C8C;"/>
+            </section>
+            <section>
+                <h3>Array Literal</h3>
+                <img src="images/array-literal.png" style="border: 2px solid #8F8C8C;" width="500"/>
+            </section>
 
-					<section>
-						<p>
-							Fun ?
-						</p>
-						<img src="images/js-as-a-language.jpg" class="fragment current-visible" width=400 style="border: 2px solid #8F8C8C;"/>
-					</section>
+            <section>
+                <h4>Function</h4>
+            </section>
 
-					<section>
-						<p>
-							What about <span style="color: #f04e98;">Interactive Web Page</span> ?
-						</p>
-					</section>
-				</section>
+            <section>
+                <h3>Function - Definition & ()</h3>
+                <img src="images/func-1.png" width=500
+                     style="border: 2px solid #8F8C8C; "/>
+            </section>
+            <section>
+                <h3>Function - Definition & ()</h3>
+                <img src="images/func-2.png" width=500
+                     style="border: 2px solid #8F8C8C;"/>
+            </section>
+
+            <section>
+                <h3>Function - as Object Methods</h3>
+                <img src="images/func-5.png" width=700 style="border: 2px solid #8F8C8C;"/>
+                <p class='fragment roll-in'>What's "<span style="color: #f04e98;">this</span>" ?</p>
+            </section>
+
+            <section>
+                <h3>Function - as Parameter</h3>
+                <img src="images/func-as-parameter.png" width=500 style="border: 2px solid #8F8C8C;"/>
+            </section>
+
+            <section>
+                <h4>Scope</h4>
+            </section>
+
+            <section>
+                <h3>Scope - Local</h3>
+                <img src="images/scope-1.png" width=500 style="border: 2px solid #8F8C8C;"/>
+            </section>
+
+            <section>
+                <h3>Scope - Global</h3>
+                <img src="images/scope-2.png" width=500 style="border: 2px solid #8F8C8C;"/>
+            </section>
+
+            <section>
+                <h3>Scope - Automatically Global</h3>
+                <img src="images/scope-3.png" width=500 style="border: 2px solid #8F8C8C;"/>
+            </section>
+
+            <section>
+                <h3>Lifetime of Variables</h3>
+                <ul>
+                    <li class='fragment roll-in'>Starts when it is declared.</li>
+                    <li class='fragment roll-in'>For <span style="color: #f04e98;">local variables</span>, deleted when
+                        the
+                        function is completed.
+                    </li>
+                    <li class='fragment roll-in'>For <span style="color: #f04e98;">global variables</span>, deleted when
+                        the
+                        page is closed.
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h4><span style="color:#f04e98;">Quiz</span> Time!</h4>
+            </section>
+
+            <section>
+                <p><span style="color:#f04e98;">Q7:</span> What will be print in console ?</p>
+                <img src="images/understand-scope.png" width="500" style="border: 2px solid #8F8C8C;"/>
+                <p style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">10</p>
+            </section>
+
+            <section>
+                <p><span style="color:#f04e98;">Q8:</span> What about this one ?</p>
+                <img src="images/understand-scope-2.png" width="500" style="border: 2px solid #8F8C8C;"/>
+                <p style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">5</p>
+            </section>
+
+            <section>
+                <p><span style="color:#f04e98;">Q9:</span> Yes, <span style="font-style: italic">this</span> is confusing...</p>
+                <img src="images/understand-this.png" width="400" style="border: 2px solid #8F8C8C;"/>
+                <p>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">window,</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">anObject</span>
+                </p>
+            </section>
+
+            <section>
+                <p><span style="color:#f04e98;">Q10:</span> What will be print in console...</p>
+                <img src="images/understand-this-2.png" width="400" style="border: 2px solid #8F8C8C;"/>
+                <p>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">"ThoughtWorks",</span>
+                    <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">"Wang Ni"</span>
+                </p>
+            </section>
+
+            <section>
+                <p>
+                    Fun ?
+                </p>
+                <img src="images/js-as-a-language.jpg" class="fragment current-visible" width=400
+                     style="border: 2px solid #8F8C8C;"/>
+            </section>
+
+            <section>
+                <p>
+                    What about <span style="color: #f04e98;">Interactive Web Page</span> ?
+                </p>
+            </section>
+        </section>
 
         <section>
             <section>
                 <h4>Document Object Model - <span style="color: #f04e98;">DOM</span></h4>
             </section>
 
-						<section>
-							<img src="images/dom-1.png" width=500 style="border: 2px solid #8F8C8C;"/>
-						</section>
+            <section>
+                <img src="images/dom-1.png" width=500 style="border: 2px solid #8F8C8C;"/>
+            </section>
 
             <section>
                 <h3>Html Dom Tree</h3>
                 <img src="images/html-dom-tree.png" width=800>
-								<p>
-									<span class="fragment roll-in" style="margin-right: 5%;">Node</span>
-	                <span class="fragment roll-in">Event</span>
-								</p>
+
+                <p>
+                    <span class="fragment roll-in" style="margin-right: 5%;">Element</span>
+                    <span class="fragment roll-in" style="margin-right: 5%;">Attribute</span>
+                    <span class="fragment roll-in" style="margin-right: 5%;">Text</span>
+                </p>
+
+                <p class="fragment roll-in">Event</p>
+                <!--dom event propagation-->
             </section>
 
-						<section>
-							<h3>HTML DOM</h3>
-							<ul style="margin-left: 18%">
-								<li class='fragment roll-in'>Parse HTML elements as objects</li>
-								<li class='fragment roll-in'>Build attribute of all HTML elements</li>
-								<li class='fragment roll-in'>Provide methods to access all HTML elements</li>
-								<li class='fragment roll-in'>Provide events for all HTML elements</li>
-							</ul>
-						</section>
+            <section>
+                <h3>HTML DOM</h3>
+                <ul style="margin-left: 18%">
+                    <li class='fragment roll-in'>Parse HTML elements as objects</li>
+                    <li class='fragment roll-in'>Build attribute of all HTML elements</li>
+                    <li class='fragment roll-in'>Provide methods to access all HTML elements</li>
+                    <li class='fragment roll-in'>Provide events for all HTML elements</li>
+                </ul>
+
+            </section>
 
             <section>
                 <h3>HTML DOM - Manipulation</h3>
-								<p onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#D94A38;width:120px;height:60px;padding:60px;line-height:30px;float: left;margin-left:3%">
-									Mouse Over Me
-								</p>
-								<img class='fragment current-visible' src="images/dom-mul-1.png"  width=600 style="border: 2px solid #8F8C8C; position:absolute; right: 3%"/>
-								<img class='fragment roll-in'src="images/dom-mul-2.png"  width=600 style="border: 2px solid #8F8C8C; position:absolute; right: 3%"/>
-								<script>
-									function mOver(element) {
-										element.innerHTML = "Thank You"
-									}
 
-									function mOut(element) {
-										element.innerHTML = "Mouse Over Me"
-									}
-								</script>
+                <p onmouseover="mOver(this)" onmouseout="mOut(this)"
+                   style="background-color:#D94A38;width:120px;height:60px;padding:60px;line-height:30px;float: left;margin-left:3%">
+                    Mouse Over Me
+                </p>
+                <img class='fragment current-visible' src="images/dom-mul-1.png" width=600
+                     style="border: 2px solid #8F8C8C; position:absolute; right: 3%"/>
+                <img class='fragment roll-in' src="images/dom-mul-2.png" width=600
+                     style="border: 2px solid #8F8C8C; position:absolute; right: 3%"/>
+                <script>
+                    function mOver(element) {
+                        element.innerHTML = "Thank You"
+                    }
+
+                    function mOut(element) {
+                        element.innerHTML = "Mouse Over Me"
+                    }
+                </script>
             </section>
         </section>
 
         <section>
-            <h3>Dojo</h3>
+            <h4 style='font-size: 1.25em'>Dojo <span
+                    style="font-family: 'Open Sans'; font-size: 50%; font-style:italic;">The Matrix</span>
+            </h4>
+            <img src="images/dojo.jpg" width=500 style="border: 2px solid #8F8C8C;"/>
         </section>
-
         <section>
-            <section>
-                <h3>Recommended way to coding with JavaScript</h3>
-            </section>
-            <section>
-                <h3>namespace</h3>
-            </section>
-            <section>
-                <h3>functional programming style</h3>
-            </section>
-            <section>
-                <h3>this</h3>
-                <p>Don't use THIS unless it is a callback function.</p>
-            </section>
+            <h4>Thank <span style="color:#f04e98;">You</span>.</h4>
         </section>
+    </div>
+</div>
 
-        <section>
-            <p>Thank You.</p>
-        </section>
-			</div>
-		</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+<script>
 
-		<script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+</script>
 
-		</script>
-
-	</body>
+</body>
 </html>
