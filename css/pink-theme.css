@@ -45,6 +45,15 @@
 	border-top: 4px solid #f04e98;
 	border-bottom: 4px solid #f04e98;
 }
+.reveal a {
+	color: #f04e98;
+}
+.reveal a:hover {
+	color: #f04e98;
+}
+.reveal table {
+	font-size: 0.8em;
+}
 .reveal h3 {
 	padding-bottom: 16px;
 	border-bottom: 4px solid #f04e98;	
@@ -62,4 +71,9 @@
 .reveal table th,
 .reveal table{
 	border: 1px solid white;
+}
+.guess-box li{
+	list-style: none;
+	float: left;
+	margin-right: 30px;
 }

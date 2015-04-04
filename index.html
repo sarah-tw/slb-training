@@ -49,9 +49,31 @@
 				</section>
 
 				<section>
-					<h3>Agenda</h3>
-					<a href="less.html">Less</a>
-					<a href="oocss.html">OOCSS</a>
+					<h4>Agenda</h4>
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th>Apr 8</th>
+								<th>Apr 9</th>
+								<th>Apr 10</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Morning</td>
+								<td>Javascript 101</td>
+								<td>Javascript library</td>
+								<td>Javascript test</td>
+							</tr>
+							<tr>
+								<td>Afternoon</td>
+								<td><a href="index.html#/3">Review HTML & CSS</a></td>
+								<td><a href="oocss.html">OOCSS</a></td>
+								<td>UI test</td>
+							</tr>
+						</tbody>
+					</table>
 				</section>
 
 				<section>
@@ -65,25 +87,25 @@
 
 				<section>
 					<section>
-						<h2>Find Redundancy css</h2>
+						<h3>Find Redundant css</h3>
 					</section>
 					<section>
 						<div>No. 1</div>
 							<div data-markdown>
 								<script type="text/template">
-								```html
+								```xml
 									<div>Hello world.</div>			
 								```
 								```CSS
 									float: left;
 									display: block;
-									height: 50px;
+									height: 100px;
 									left: 100px;
-									background-color: red;
+									background-color: #f04e98;
 								```
 								</script>
 							</div>	
-							<span class="fragment">float make element behaviour look like an inline-block element</span>				
+							<a href="examples.html" target="_blank">Example</a>
 					</section>
 					<section>
 						<div>No. 2</div>
@@ -93,17 +115,17 @@
 								<span>Hello world.</span>			
 							```
 							```CSS
-								height: 50px;
-								width: 50px;
+								height: 100px;
+								width: 100px;
 								line-height: 100px; 
-								background-color: red;
+								background-color: #f04e98;
 							```
 							</script>
 						</div>	
-						<span class="fragment">span is an inline element, don't have line-height and height and width.</span>
+						<a href="examples.html" target="_blank">Example</a>
 					</section>
 					<section>
-						<div>3. Which css is useless?</div>
+						<div>No. 3</div>
 						<div data-markdown>
 							<script type="text/template">
 							```html
@@ -112,23 +134,27 @@
 							```CSS
 								position: absolute;
 								display: block;
-								top: 100px;
-								width: 50px;
-								left: 0;
-								line-height: 100px; 
+								top: 330px;
+								width: 100px;
+								right: 100px;
+								line-height: 100px;  
 							```
 							</script>
 						</div>	
-						<span class="fragment">absolute and fixed position make element behaviour look like an inline-block element, but relative positive won't.</span>			
+						<p>
+						<a href="examples.html" target="_blank">Example</a>
+						</p>
+						<span class="fragment">position absolute and fixed change element behaviour to an inline-block element, but position relative won't.</span>			
 					</section>
 
 				</section>
 
 				<section>
 					<section>
-						<h2>Guess where is it</h2>
+						<h3>Guess where is it</h3>
 					</section>
 					<section>
+						<h4>No. 4</h4>
 						<div data-markdown>
 							<script type="text/template">
 							```html
@@ -140,33 +166,65 @@
 								right: 10px;
 								top: 50px;
 								left: 0;
-								width: 50px;
-								height: 50px;
-								background-color: yellow;
+								width: 100px;
+								height: 100px;
+								background-color: #f04e98;
 							```
 							</script>
 						</div>	
-						<img src="images/position1.png" height="200px" alt="">
-						<img src="images/position2.png" alt="" height="200px">
-						<img src="images/position3.png" alt="" height="200px">
+						<img src="images/position1.jpg" height="200px" alt="">
+						<img src="images/position2.jpg" alt="" height="200px">
+						<img src="images/position3.jpg" alt="" height="200px">
+						<div>
+							<a href="examples.html" target="_blank">Example</a>
+						</div>
+						<small class="fragment">
+							top, left attributes have higher priority than right, bottom.
+						</small>
+
 					</section>
 					<section>
-						<style>
-						.A, .B, .C {
+						<h4>No. 5</h4>
+						<div data-markdown>
+		          <script type="text/template">
+		            ```html
+		             	<div>You</div>
+		             	<p style="float:left">I</p>
+		             	<p>She</p>
+		            ```
+		          </script>							
+						</div>					
+						<ul >
+							<li style="list-style:none">A. Left side of You</li>
+							<li style="list-style:none">B. Right side of You</li>
+							<li style="list-style:none">C. Left side of She</li>
+							<li style="list-style:none">D. Sit alone in second row</li>
+						</ul>
+						<div class="fragment">
+							<a href="examples.html" target="_blank">Example</a>
+						</div>
+						<p class="fragment">C</p>
+						
+					</section>
+					<section class="guess-box">
+						<p>What's box size</p>
+						<div data-markdown>
+							```css
+							display: block;
+							margin: 10px 30px;
+							border: 5px solid red;
+							padding: 5px 15px;
+							height: 30px;
 							width: 100px;
-							height: 100px;
-							background-color: red;
-						}
-						.B {
-							background-color: yellow;
-						}
-						.C {
-							background-color: green;
-						}
-						</style>
-						<div class="A">s</div>
-						<div class="B"></div>
-						<div class="C"></div>
+							```
+						</div>
+						<ul class="puzzle">
+							<li>A.140*50</li>
+							<li>B.200*70</li>
+							<li>C.120*40</li>
+							<li>D.Uncertain</li>
+						</ul>
+						<p class="fragment">A</p>						
 					</section>
 				</section>
 
