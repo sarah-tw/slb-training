@@ -81,11 +81,21 @@
         <section>
             <section>
                 <h3>JavaScript in a nutshell</h3>
-                <img src="images/JavaScript-logo.png" alt="" width="200" style="float: left; margin-right:10px;"/>
-
-                <p>A <strong style="color:#f04e98">scripting language</strong> that is interpreted by the browser engine
+                <img onmouseover="showGreen(this)" id="yellowLogo" src="images/JavaScript-logo.png" alt="" width="200" style="float:left; left:0px;margin-right:10px;"/>
+                <img  onmouseout="showYellow(this)" id="greenLogo" hidden src="images/logo-javaScript.png" alt="" width="200" style="float: left; margin-right:10px;float:left;left:0px;"/>
+                <span>A <strong style="color:#f04e98">scripting language</strong> that is interpreted by the browser engine
                     when
-                    the web page is loaded.</p>
+                    the web page is loaded.</span>
+                <script>
+                  function showGreen(element){
+                    element.hidden=true;
+                    document.getElementById("greenLogo").hidden = false;
+                  }
+                  function showYellow(element){
+                    element.hidden=true;
+                    document.getElementById("yellowLogo").hidden = false;
+                  }
+                </script>
             </section>
 
             <section>
@@ -186,15 +196,17 @@
 
             <section>
                 <h3>Non-Primitive/Reference Values</h3>
-                <ul style="margin-right: 30%; font-size: 80%">
-                    <li><strong style="color:#f04e98;">Object</strong></li>
-                    <li><strong style="color:#f04e98;">Array</strong></li>
-                    <li><strong style="color:#f04e98;">function</strong></li>
-                    <li><strong style="color:#f04e98;">Build-in</strong> String, Boolean, Number, Date ...</li>
+                <ul style="margin-right: 50%; font-size: 80%">
+                    <li><strong style="color:#f04e98;">Object</strong> {}</li>
+                    <li><strong style="color:#f04e98;">function</strong> function(){}</li>
                 </ul>
             </section>
 
             <section>
+              <p><strong style="color:#f04e98;">Build-in Objects:</strong> Array, String, Boolean, Number, Date ...<p>
+            </section>
+
+            <!-- <section>
                 <h4>typeof</h4>
             </section>
 
@@ -204,7 +216,7 @@
 
             <section>
                 <img src="images/typeof-objects.png" width="500" style="border: 2px solid #8F8C8C;"/>
-            </section>
+            </section> -->
 
             <section>
                 <h4><span style="color:#f04e98;">Quiz</span> Time!</h4>
@@ -298,7 +310,7 @@
             </section>
             <section>
                 <h3>Object Literal</h3>
-                <img width="400" src="images/object-literal.png" style="border: 2px solid #8F8C8C;"/>
+                <img width="400" src="images/object-1.png" style="border: 2px solid #8F8C8C;"/>
             </section>
 
             <section>
