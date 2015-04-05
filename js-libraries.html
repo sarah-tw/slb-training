@@ -1,189 +1,322 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Libraries</title>
+    <meta name="description" content="A presentation for JavaScript beginers">
+    <meta name="author" content="Hakim El Hattab">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<title>JavaScript Libraries</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="css/pink-theme.css" id="theme">
 
-		<meta name="description" content="A presentation for JavaScript beginers">
-		<meta name="author" content="Hakim El Hattab">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
-		<link rel="stylesheet" href="css/pink-theme.css" id="theme">
+<body>
 
+<div class="reveal">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
+            <h2>JavaScript Libraries</h2>
+            <p>Wang Ni</p>
+        </section>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+        <section>
+            <section>
+                <h4>TODO</h4>
+                <img src="images/todo.png" width="800" style="border: 2px solid #8F8C8C"/>
+                </section>
+            <section>
+                <ul>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">Fetch</span> todo list from server</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">Render</span> todo list on the page</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">Add/Remove</span> todo item on the page</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">Check</span> todo item on the page</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">Change</span> number of things</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">Draggable</span> todo items</li>
+                </ul>
+            </section>
+            <section>
+                <p>How ?</p>
+            </section>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+            <section>
+                <p>We might end up with...</p>
+                <img src="images/todo-plain-js-1.png" width="500" style="border: 2px solid #8F8C8C; "/>
+                <p class="fragment roll-in" style="color:#f04e98; font-size: 80%;">Just for create one todo item</p>
+            </section>
+            <section>
+                <img src="images/logo-jquery.png" width="200" style="border: none; box-shadow: none; background: none; margin-right: 5%;"/>
+                <img src="images/logo-undercorejs.png" width="200" style="border: none; box-shadow: none; background: none;"/>
+            </section>
 
-	<body>
+        </section>
 
-		<div class="reveal">
+        <section>
+            <section>
+                <p><img width="300" src="images/logo-jquery.png" alt="" style="border: none; background: none; box-shadow: none;"/></p>
+                <ul class="fragment roll-in" style="font-size: 60%">
+                    <li>Simpler <span style="color:#f04e98;">HTML document traversal and manipulation</span></li>
+                    <li>Simpler <span style="color:#f04e98;">event handling</span></li>
+                    <li>Simpler <span style="color:#f04e98;">Ajax</span></li>
+                    <li>Simpler <span style="color:#f04e98;">Animation</span></li>
+                    <li><span style="color:#f04e98;">Across</span> a multitude of <span style="color:#f04e98;">browsers</span></li>
+                </ul>
+            </section>
+            <section>
+                <h4>But why ?</h4>
+            </section>
+            <section>
+                <p>Simple DOM manipulation <span style="color:#f04e98;">API</span></p>
+            </section>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
-					<h2>JavaScript Libraries</h2>
-      		        <p>Wang Ni</p>
-				</section>
+            <section>
+                <p><img src="images/todo-plain-js-3.png" width="600" style="border: 2px solid #8F8C8C; "/></p>
+            </section>
+            <section>
+                <p>Does anyone know <span style="color:#f04e98;">CSS3 selector</span> ?</p>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">$()</span> selects elements By: </p>
+                <ul style="font-size: 65%; margin-left: 0;">
+                    <li class="fragment roll-in" >ID, </li>
+                    <li class="fragment roll-in" >Class Name, </li>
+                    <li class="fragment roll-in" >Tag, </li>
+                    <li class="fragment roll-in" >Attribute, </li>
+                    <li class="fragment roll-in" >Compound CSS Selector, </li>
+                    <li class="fragment roll-in" >Pseudo-Selectors</li>
+                </ul>
+                </p>
+                <p class="fragment roll-in"><img src="images/jquery-selector.png" width="300" style="border: 2px solid #8F8C8C; "/></p>
+            </section>
+            <section>
+                <p>Simple <span style="color:#f04e98;">Event handler</span> to selections</p>
+                <ul style="font-size: 65%; margin-left: 0;">
+                    <li class="fragment roll-in" >window.load <span style="color:#f04e98;">vs.</span> $(document).ready</li>
+                    <li class="fragment roll-in" >.click(), .focus(), ..</li>
+                    <li class="fragment roll-in" >.on(), many events & many handlers</li>
+                    <li class="fragment roll-in" >.off(), </li>
+                    <li class="fragment roll-in" >.one()</li>
+                    <li class="fragment roll-in" >event object</li>
+                </ul>
+            </section>
 
+            <section>
+                <p><span style="color:#f04e98;">AJAX</span> ?</p>
+                <p class="fragment roll-in" style="font-size: 70%;font-style: italic">Asynchronous JavaScript and XML.</p>
+            </section>
+            <section>
+                <p onclick="ajaxCall()"
+                   style="background-color:#D94A38;width:120px;padding:60px;line-height:30px;float: left;margin-left:3%">
+                    Click Me
+                </p>
+                <span id="ajax-result" style="position: relative; top: 75px;"></span>
+                <script>
+                    function ajaxCall(){
+                        var xmlhttp;
+
+                        if (window.XMLHttpRequest) {
+                            // code for IE7+, Firefox, Chrome, Opera, Safari
+                            xmlhttp=new XMLHttpRequest();
+                        }else{
+                            // code for IE6, IE5
+                            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                        }
+
+                        xmlhttp.onreadystatechange=function() {
+                            if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                                document.getElementById("ajax-result").innerHTML=xmlhttp.responseText;
+                            }
+                        }
+
+                        xmlhttp.open("GET","/result.txt",true);
+                        xmlhttp.send();
+                    }
+                </script>
+            </section>
+            <section>
+                <p>How <span style="color:#f04e98;"> AJAX </span>works</p>
+                <img src="images/how-ajax-works.gif" alt=""/>
+            </section>
+            <section>
+                <img src="images/ajax-1.png" width="700" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;"> AJAX </span> in JQuery</p>
+                <ul style="font-size: 70%; margin-left: 10px;">
+                    <li class="fragment roll-in" >$.ajax()</li>
+                    <li class="fragment roll-in" >success, error, complete, timeout</li>
+                    <li class="fragment roll-in" >response dataType</li>
+                    <li class="fragment roll-in" >$.get(), $.post()</li>
+                </ul>
+            </section>
+            <section>
+                <img src="images/ajax-jquery.png" width="500" style="border: 2px solid #8F8C8C"/>
+                <img src="images/ajax-response.png" width="500" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <img src="images/cross-browsers.png" width="500" style="border: 2px solid #8F8C8C"/>
+                <p class="fragment roll-in"><span style="color:#f04e98;">Cross browser</span> issues</p>
+                <!--a design that renders perfectly in Internet Explorer 8 but may not run that well in Mozilla Firefox, or an interface component you’ve spent days handcrafting works beautifully in all major browsers except Opera on Linux.-->
+                <!--The jQuery team is aware of the cross-browser issues, and more importantly they understand why these issues occur. They have written this knowledge into the library—so jQuery works around the caveats for you. Most of the code you write will run exactly the same on all the major browsers.-->
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <p><img src="images/logo-undercorejs.png" width="300" style="border: none; box-shadow: none; background: none;"/></p>
+            </section>
+            <!--大师的书：http://juntao.gitbooks.io/fun-with-underscore/content/app/README.html-->
                 <section>
-                    <h3>JQuery</h3>
-                </section>
-                <section>
-                    <h3>Why JQuery?</h3>
-                    <p>Interacting with DOM by JQuery</p>
-										支持css selector
-                </section>
-                <section>
-                    <h3>Adding jquery to your web page</h3>
-                    <p>$</p>
-                </section>
-								<section>
-									selector
-								</section>
-                <section>
-                    <section>
-                        <h3>Manipulating DOM</h3>
-                    </section>
+                    <h4><span style="color:#f04e98;">High-order</span> Functions</h4>
+                    <ul style="font-size: 70%; margin-left: 10px;">
+                        <li class="fragment roll-in" >either take <span style="color:#f04e98;">functions as parameters</span></li>
+                        <li class="fragment roll-in" >or return <span style="color:#f04e98;">functions as values</span></li>
+                        <li class="fragment roll-in" >or both</li>
+                    </ul>
                 </section>
 
-                <section>
-                    <section>
-                        <h3>Events</h3>
-                    </section>
-                    <!--事件冒泡，捕获-->
-                </section>
+            <section>
+                <p>Multiple By</p>
+                <img src="images/multiplyBy-1.png" width="500" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <p>Multiple By - using <span style="color:#f04e98;">map</span></p>
+                <img src="images/multiplyBy-2.png" width="500" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <p>Multiple By - with <span style="color:#f04e98;">_.map</span></p>
+                <img src="images/multiplyBy-3.png" width="500" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <img src="images/underscore-func-1.png" width="700" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <img src="images/underscore-func-2.png" width="700" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <img src="images/underscore-func-3.png" width="700" style="border: 2px solid #8F8C8C"/>
+            </section>
+        </section>
 
-                <section>
-                    <section>
-                        <h3>Ajax</h3>
-                    </section>
-                </section>
+        <section>
+            <section>
+                <h4>Adding JS libraries to web page</h4>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Where</span> should we require <span style="color:#f04e98;">JS libraries</span> ?</p>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">&#60;head&#62;</span> vs. <span style="color:#f04e98;">&#60;body&#62;</span></p>
 
-                <section>
-                    <h3>Underscore.js</h3>
-                </section>
-                <!--大师的书：http://juntao.gitbooks.io/fun-with-underscore/content/app/README.html-->
-                <section>
-                <section>
-                    <h3>High-order Functions</h3>
-                    <p>Functions that either take functions as parameters or return functions as values (or both).</p>
-                </section>
+            </section>
+            <section>
+                <p><strong>Always load <span style="color:#f04e98;">before</span> our own JS sources.</strong></p>
+            </section>
+            <section>
+                <p>Adding <span style="color:#f04e98;">$</span> to TODO</p>
+            </section>
+            <section>
+                <p>Adding <span style="color:#f04e98;">_</span> to TODO</p>
+                <p class="fragment roll-in" style="font-size: 80%;"><span style=" color:#f04e98;">Try it.</span> :P</p>
+            </section>
+        </section>
 
-                <section data-markdown>
-        <pre><code>
-            var array = [1, 2, 4, 8, 16, 32, 64, 128];
-        </code></pre>
-                </section>
+        <section>
+            <section>
+                <h4>Dojo - TODO</h4>
+                <img src="images/todo.png" width="800" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <img src="images/todo.png" width="350" style="border: 2px solid #8F8C8C"/>
+                <ul style="font-size: 70%;  position: relative;bottom:15px;margin-left: 25px;">
+                    <li><span style="color:#f04e98;">Introduce</span> underscore</li>
+                    <li><span style="color:#f04e98;">Create</span> todo list response</li>
+                    <li><span style="color:#f04e98;">Fetch</span> todo list from server</li>
+                    <li><span style="color:#f04e98;">Render</span> todo list on the page</li>
+                    <li><span style="color:#f04e98;">Add/Remove</span> todo item on the page</li>
+                    <li><span style="color:#f04e98;">Change</span> number of things</li>
+                    <li><span style="color:#f04e98;">Check</span> todo item on the page</li>
+                    <li>*<span style="color:#f04e98;">Draggable</span> todo items</li>
+                </ul>
+            </section>
+        </section>
 
-                <section data-markdown>
-        <pre><code>
 
-            var array = [1, 2, 4, 8, 16, 32, 64, 128];
 
-            function multiplyBy(array, num) {
-            var result = new Array(); 
+        <section>
+            <h4>Thank <span style="color:#f04e98;">You</span>.</h4>
+        </section>
+    </div>
+</div>
 
-            for(var i = 0, len = array.length; i < len; i++) {
-            result.push(array[i] * num); 
-            }
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-            return result;
-            }
+<script>
 
-            multiplyBy(array, 4);
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-        </code></pre>
-                </section>
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-                <section>
-        <pre><code>
-            var array = [1, 2, 4, 8, 16, 32, 64, 128];
-            var num = 4;
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
 
-            array.map(function(item) {
-            return item * num;
-            });
-        </code></pre>
-                </section>
-                </section>
-                <section>
-                    <h3>Why Underscore.js ?</h3>
-                </section>
-                <section>
-                    <h3>Adding underscore.js to your web page</h3>
-                    <p>_</p>
-                </section>
+</script>
 
-								<section>
-									DSL
-								</section>
-
-                <section>
-                    <h3>Todos</h3>
-                </section>
-                <section>
-                    <h3>Interact with server side</h3>
-                    <p>GET/POST with JSON (POST?)</p>
-                </section>
-                <section>
-                    <h3>Dojo</h3>
-                </section>
-
-                <section>
-                    <p>Thank You.</p>
-                </section>
-			</div>
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
-
-	</body>
+</body>
 </html>
