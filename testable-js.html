@@ -39,144 +39,105 @@
     <div class="slides">
         <section>
             <p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
-            <h2>JavaScript Libraries</h2>
+            <h2>Testable JavaScript</h2>
             <p>Wang Ni</p>
         </section>
 
         <section>
-            <p><img width="300" src="images/logo-jquery.png" alt="" style="border: none; background: none; box-shadow: none;"/></p>
-            <ul class="fragment roll-in" style="font-size: 60%">
-                <li>Simpler <span style="color:#f04e98;">HTML document traversal and manipulation</span></li>
-                <li>Simpler <span style="color:#f04e98;">event handling</span></li>
-                <li>Simpler <span style="color:#f04e98;">Ajax</span></li>
-                <li>Simpler <span style="color:#f04e98;">Animation</span></li>
-                <li><span style="color:#f04e98;">Across</span> a multitude of <span style="color:#f04e98;">browsers</span></li>
-            </ul>
-        </section>
-        <section>
             <section>
-                <h4>But why ?</h4>
+                <h4>How to <span style="color:#f04e98;">test</span> JavaScript code ?</h4>
             </section>
             <section>
-                <h4>Does anyone know <span style="color:#f04e98;">CSS selector</span> ?</h4>
+                <p>Any one know <span style="color:#f04e98;">Jasmine</span> ?</p>
             </section>
             <section>
-                <p>We don't like these:</p>
-
+                <p><img width="200" src="images/jasmine_logo.svg" alt="" style="border: none; box-shadow: none; background: none;"/></p>
+                <p style="font-size: 70%;">Behavior-driven development framework for testing JavaScript code.</p>
             </section>
             <section>
-                <p>And the way we manipulate DOM tree...</p>
-                <!--examples create elements, change attributes-->
+                <p>And <span style="color:#f04e98;">Mocha</span> ?</p>
             </section>
-        </section>
-
-        <section>
-            <h3>Adding jQuery to your web page</h3>
-
-            <p>$</p>
-        </section>
-        <section>
-            selector
-        </section>
-        <section>
             <section>
-                <h3>Manipulating DOM</h3>
-                <!--examples selector create elements, change attributes-->
+                <p><img width="300" src="images/mocha-logo.png" alt="" style="border: none; box-shadow: none; background: none;"/></p>
+                <p style="font-size: 70%;">A feature-rich JavaScript test framework running on node.js and the browser, making asynchronous testing simple and fun.</p>
+            </section>
+            <section>
+                <p><img width="500" src="images/test-js-1.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
+                <p class="fragment roll-in"><img width="500" src="images/test-js-2.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
+            </section>
+            <section>
+                <p><img width="700" src="images/test-js-3.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
             </section>
         </section>
 
         <section>
             <section>
-                <h3>Events</h3>
+                <h4>TODO</h4>
+                <p><img width="500" src="images/todo-panel.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
             </section>
-            <!--事件冒泡，捕获-->
+            <section>
+                <p>How to <span style="color:#f04e98;">test</span> this code ?</p>
+                <p><img width="800" src="images/testable-todo-1.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
+            </section>
         </section>
 
         <section>
             <section>
-                <h3>Ajax</h3>
+                <h4>Writing <span style="color:#f04e98;">testable JavaScript</span></h4>
             </section>
-        </section>
-
-        <section>
-            <h3>Underscore.js</h3>
-        </section>
-        <!--大师的书：http://juntao.gitbooks.io/fun-with-underscore/content/app/README.html-->
-        <section>
             <section>
-                <h3>High-order Functions</h3>
-
-                <p>Functions that either take functions as parameters or return functions as values (or both).</p>
+                <p><img width="500" src="images/todo-panel.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
             </section>
-
-            <section data-markdown>
-        <pre><code>
-            var array = [1, 2, 4, 8, 16, 32, 64, 128];
-        </code></pre>
-            </section>
-
-            <section data-markdown>
-        <pre><code>
-
-            var array = [1, 2, 4, 8, 16, 32, 64, 128];
-
-            function multiplyBy(array, num) {
-            var result = new Array(); 
-
-            for(var i = 0, len = array.length; i < len; i++) {
-            result.push(array[i] * num); 
-            }
-
-            return result;
-            }
-
-            multiplyBy(array, 4);
-
-        </code></pre>
-            </section>
-
             <section>
-        <pre><code>
-            var array = [1, 2, 4, 8, 16, 32, 64, 128];
-            var num = 4;
-
-            array.map(function(item) {
-            return item * num;
-            });
-        </code></pre>
+                <p><img width="500" src="images/testable-js-2.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
+            </section>
+            <section>
+                <img width="300" src="images/testable-js-6.png" alt="" style="position:relative;top:70px;border: 2px solid #8F8C8C; float: left;"/>
+                <p  class="fragment roll-in" style="font-size: 80%; position: relative;right: 70px;">When <span style="color:#f04e98;">'.todo-add'</span> is changed</p>
+                <ul style="font-size: 70%; margin-left: 10px;">
+                    <li class="fragment roll-in"><span style="color:#f04e98;">TODO.add</span>( todoMessage )</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">ThingsTodo.update</span>( todoItemNumber )</li>
+                    <li class="fragment roll-in">clean up</li>
+                </ul>
+            </section>
+            <section>
+                <img width="300" src="images/testable-js-4.png" alt="" style="position:relative;;border: 2px solid #8F8C8C; float: left;"/>
+                <p  class="fragment roll-in" style="font-size: 80%; position: relative;right: 70px;">When <span style="color:#f04e98;">'add'</span> is called</p>
+                <ul style="font-size: 70%; ">
+                    <li class="fragment roll-in"><span style="color:#f04e98;">TodItem.generate</span>( todoMessage )</li>
+                </ul>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">TodItem</span>.generate</p>
+                <ul style="font-size: 70%; ">
+                    <li class="fragment roll-in"><span style="color:#f04e98;">generate</span> todo item element</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">handle event</span>: checked</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">handle event</span>: close</li>
+                </ul>
+            </section>
+            <section>
+                <img width="300" src="images/testable-js-5.png" alt="" style="position:relative;top:30px;left:110px;border: 2px solid #8F8C8C; float: left;"/>
+                <p  class="fragment roll-in" style="font-size: 80%; position: relative; right: 50px;top:20px;  ">When <span style="color:#f04e98;">'update'</span> is called</p>
+                <ul style="font-size: 70%; position: relative; right: 50px;">
+                    <li class="fragment roll-in"><span style="color:#f04e98;">update</span> with new number</li>
+                </ul>
+            </section>
+            <section>
+                <ul style="font-size: 80%;">
+                    <li class="fragment roll-in"><span style="color:#f04e98;">document.ready</span> for todo-add</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">TODO</span> required by document ready handler</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">ThingsTodo</span> required by document ready handler</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">TodoItem</span> required by TODO</li>
+                </ul>
             </section>
         </section>
         <section>
-            <h3>Why Underscore.js ?</h3>
-        </section>
-        <section>
-            <h3>Adding underscore.js to your web page</h3>
-
-            <p>_</p>
+            <h4>Dojo - <span style="color:#f04e98;">Testing</span> TODO</h4>
+            <p><img width="500" src="images/todo-panel.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
         </section>
 
         <section>
-            DSL
-        </section>
-
-        <section>
-            <h4>Add JS libraries to web page</h4>
-        </section>
-
-        <section>
-            <h3>Todos</h3>
-        </section>
-        <section>
-            <h3>Interact with server side</h3>
-
-            <p>GET/POST with JSON (POST?)</p>
-        </section>
-        <section>
-            <h3>Dojo</h3>
-        </section>
-
-        <section>
-            <p>Thank You.</p>
+            <h4>Thank <span style="color:#f04e98;">You</span>.</h4>
         </section>
     </div>
 </div>
