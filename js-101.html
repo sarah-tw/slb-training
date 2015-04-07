@@ -55,10 +55,10 @@
                 <h3>Know this t-shirt ?</h3>
                 <img src="images/t-shirts.jpg" alt=""/>
             </section>
-
+<!--
             <section>
                 <img src="images/first-day.png" alt="" height="600"/>
-            </section>
+            </section> -->
 
             <section>
                 <img src="images/third-day.png" alt="" height="600"/>
@@ -69,16 +69,21 @@
             </section>
         </section>
 
-
         <section>
-            <img src="images/js-logo.png" width="300" style="background: inherit; border: none; box-shadow: none;"/>
+            <section>
+                <img src="images/js-logo.png" width="300" style="background: inherit; border: none; box-shadow: none;"/>
 
-            <p>JavaScript</p>
+                <p>JavaScript</p>
 
-            <p style="font-size: 60%;">aka LiveScript, aka ECMAScript</p>
-        </section>
+                <p style="font-size: 60%;">aka LiveScript, aka ECMAScript</p>
+            </section>
 
-        <section>
+            <section>
+                <p>Are JavaScript and Java the same ?</p>
+
+                <p class='fragment roll-in' style='color:#f04e98'>No.</p>
+            </section>
+
             <section>
                 <h3>JavaScript in a nutshell</h3>
                 <img onmouseover="showGreen(this)" id="yellowLogo" src="images/JavaScript-logo.png" alt="" width="200" style="float:left; left:0px;margin-right:10px;"/>
@@ -99,12 +104,6 @@
             </section>
 
             <section>
-                <p>Are JavaScript and Java the same ?</p>
-
-                <p class='fragment roll-in' style='color:#f04e98'>No.</p>
-            </section>
-
-            <section>
                 <p>Is JavaScript only used in frontend ?</p>
 
                 <p class='fragment roll-in' style='color:#f04e98'>No.</p>
@@ -117,26 +116,24 @@
             </section>
 
             <section>
-                <p>wait, <span style='color:#f04e98'>where</span> should we put JavaScript code ?</p>
+                <p>wait, <span style='color:#f04e98'>where</span> should we write JavaScript code ?</p>
 
                 <p class='fragment roll-in' style='color:#f04e98'>HTML</p>
-                <img class='fragment roll-in' src="images/js-in-html.png" width="500"
-                     style="border: 2px solid #8F8C8C"/>
             </section>
 
             <section>
-                <h3>JavaScript in &#60;head&#62;</h3>
-                <img src="images/hello-world-1.png" width="600" style="border: 2px solid #8F8C8C"/>
-            </section>
-
-            <section>
-                <h3>JavaScript in &#60;body&#62;</h3>
-                <img src="images/hello-world-2.png" width="600" style="border: 2px solid #8F8C8C"/>
+              <h3>Inline JavaScript</h3>
+              <img src="images/js-in-html.png" width="700" style="border: 2px solid #8F8C8C"/>
             </section>
 
             <section>
                 <h3>External JavaScript</h3>
-                <img src="images/hello-world-3.png" width="600" style="border: 2px solid #8F8C8C"/>
+                <p>
+                  <img src="images/external-js.png" width="700" style="border: 2px solid #8F8C8C"/>
+                </p>
+                <p>
+                  <img class="fragment roll-in"src="images/external-js-helloworld.png" width="400" style="border: 2px solid #8F8C8C"/>
+                </p>
             </section>
 
             <section>
@@ -150,6 +147,20 @@
                     <li class='fragment roll-in'>It makes HTML and JavaScript easier to read and maintain</li>
                     <li class='fragment roll-in'>Cached JavaScript files can speed up page loads</li>
                 </ul>
+            </section>
+
+            <section>
+              <p>Anyone know how many <span style='color:#f04e98'>parts</span> does a basic <span style='color:#f04e98'>HTML document</span> have ?</p>
+            </section>
+
+            <section>
+                <h3>JavaScript in &#60;head&#62;</h3>
+                <img src="images/js-in-head.png" width="600" style="border: 2px solid #8F8C8C"/>
+            </section>
+
+            <section>
+                <h3>JavaScript in &#60;body&#62;</h3>
+                <img src="images/js-in-body.png" width="600" style="border: 2px solid #8F8C8C"/>
             </section>
 
             <section>
@@ -223,7 +234,11 @@
             </section>
 
             <section>
-                <p><span style="color:#f04e98;">Q1: </span>What's the result of <span style='font-style: italic'>typeof(name)</span> after each line ?</p>
+              <p><span style="color:#f04e98;">typeof()</span></p>
+            </section>
+
+            <section>
+                <p><span style="color:#f04e98;">Q1: </span>What's the result of <span style='color:#f04e98;font-style: italic'>typeof(name)</span> after each line ?</p>
                 <img src="images/typeof-for-eachline.png" width="400" style="border: 2px solid #8F8C8C;"/>
                 <p>
                     <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">undefined,</span>
@@ -231,7 +246,9 @@
                     <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">string,</span>
                     <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">number</span>
                 </p>
-
+            </section>
+            <section>
+              <p><span style="color:#f04e98;font-size:150%">+</span></p>
             </section>
             <section>
                 <p><span style="color:#f04e98;">Q2: </span>What's the addition result?</p>
@@ -242,7 +259,9 @@
                     <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">"21",</span>
                     <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">"111"</span>
                 </p>
-
+            </section>
+            <section>
+              <p><span style="color:#f04e98;font-size:200%">-</span></p>
             </section>
             <section>
                 <p><span style="color:#f04e98;">Q3: </span>And ?</p>
@@ -254,6 +273,9 @@
                     <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">"-11",</span>
                     <span style="color:#04ADB8;margin-right:10px;" class="fragment roll-in">NaN</span>
                 </p>
+            </section>
+            <section>
+              <p><span style="color:#f04e98;font-size:150%">==</span></p>
             </section>
             <section>
                 <p><span style="color:#f04e98;">Q4: </span>Are they equal to each other?</p>
@@ -280,6 +302,9 @@
                 </p>
             </section>
             <section>
+              <p><span style="color:#f04e98;font-size:150%">===</span></p>
+            </section>
+            <section>
                 <p><span style="color:#f04e98;">Q6: </span>hmmm... === ?</p>
                 <img src="images/quiz-4.png" width="500" style="border: 2px solid #8F8C8C;"/>
                 <p>
@@ -297,7 +322,6 @@
             </section>
             <section>
                 <h4>Primitives, Object, Array, Function</h4>
-                <h4 class="fragment roll-in">Scope</h4>
             </section>
 
             <section>
@@ -351,18 +375,20 @@
                 <h3>Function - as Parameter</h3>
                 <img src="images/func-as-parameter.png" width=500 style="border: 2px solid #8F8C8C;"/>
             </section>
-
+            <section>
+                <p>Cool ?</p>
+            </section>
             <section>
                 <h4>Scope</h4>
             </section>
 
             <section>
-                <h3>Scope - Local</h3>
+                <h3>Scope - Local <span style="font-family: 'Open Sans'; font-size: 50%; font-style:italic;">scope inside of a functoin</span></h3>
                 <img src="images/scope-1.png" width=500 style="border: 2px solid #8F8C8C;"/>
             </section>
 
             <section>
-                <h3>Scope - Global</h3>
+                <h3>Scope - Global <span style="font-family: 'Open Sans'; font-size: 50%; font-style:italic;">scope outside of a functoin</span></h3>
                 <img src="images/scope-2.png" width=500 style="border: 2px solid #8F8C8C;"/>
             </section>
 
@@ -438,6 +464,10 @@
         <section>
             <section>
                 <h4>Document Object Model - <span style="color: #f04e98;">DOM</span></h4>
+                <!-- <p class="fragment roll-in" style="font-size: 60%; font-style:italic;">
+                  An application programming interface (API) for valid HTML and well-formed XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
+                </p> -->
+                <img class="fragment roll-in" src="images/DOM-definition.png" width=700 style="border: 2px solid #8F8C8C;"/>
             </section>
 
             <section>
@@ -449,6 +479,7 @@
                 <img src="images/html-dom-tree.png" width=800>
 
                 <p>
+                    <span class="fragment roll-in" style="margin-right: 5%;">Document</span>
                     <span class="fragment roll-in" style="margin-right: 5%;">Element</span>
                     <span class="fragment roll-in" style="margin-right: 5%;">Attribute</span>
                     <span class="fragment roll-in" style="margin-right: 5%;">Text Node</span>
@@ -457,7 +488,13 @@
                 <p class="fragment roll-in">Event</p>
                 <!--dom event propagation-->
             </section>
-
+            <section>
+              <p>
+                Where does document object go ?
+              </p>
+              <span class="fragment roll-in" style="margin-right: 5%;color: #f04e98;">window</span>
+            </section>
+<!--
             <section>
                 <h3>HTML DOM</h3>
                 <ul style="margin-left: 18%">
@@ -467,7 +504,7 @@
                     <li class='fragment roll-in'>Provide events for all HTML elements</li>
                 </ul>
 
-            </section>
+            </section> -->
 
             <section>
                 <h3>HTML DOM - Manipulation</h3>
@@ -493,11 +530,10 @@
         </section>
 
         <section>
-            <h4 style='font-size: 1.25em'>Dojo <span
-                    style="font-family: 'Open Sans'; font-size: 50%; font-style:italic;">The Matrix</span>
-            </h4>
+            <h4 style='font-size: 1.25em'>Dojo <span style="font-family: 'Open Sans'; font-size: 50%; font-style:italic;">The Matrix</span></h4>
             <img src="images/dojo.jpg" width=500 style="border: 2px solid #8F8C8C;"/>
-            <p style="font-size: 70%; font-weight: bold">git clone <a href="https://github.com/Jeanne-WN/js-101-dojo">https://github.com/Jeanne-WN/js-101-dojo.git</a></p>
+            <p class='fragment roll-in' style="font-size: 70%; font-weight: bold">git clone <a href="https://github.com/Jeanne-WN/js-101-dojo">https://github.com/Jeanne-WN/js-101-dojo.git</a></p>
+            <p class='fragment roll-in' style="font-size: 60%; ">Do not use any JS library. :D</p>
         </section>
         <section>
             <h4>Thank <span style="color:#f04e98;">You</span>.</h4>
