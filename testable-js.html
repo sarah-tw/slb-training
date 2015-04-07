@@ -68,6 +68,9 @@
             <section>
                 <p><img width="700" src="images/test-js-3.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
             </section>
+            <section>
+                spy & ajax test
+            </section>
         </section>
 
         <section>
@@ -95,8 +98,8 @@
                 <img width="300" src="images/testable-js-6.png" alt="" style="position:relative;top:70px;border: 2px solid #8F8C8C; float: left;"/>
                 <p  class="fragment roll-in" style="font-size: 80%; position: relative;right: 70px;">When <span style="color:#f04e98;">'.todo-add'</span> is changed</p>
                 <ul style="font-size: 70%; margin-left: 10px;">
-                    <li class="fragment roll-in"><span style="color:#f04e98;">TODO.add</span>( todoMessage )</li>
-                    <li class="fragment roll-in"><span style="color:#f04e98;">ThingsTodo.update</span>( todoItemNumber )</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">TodoList.add</span>( todoMessage )</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">ThingsTodo.update</span>( TodoList.count() )</li>
                     <li class="fragment roll-in">clean up</li>
                 </ul>
             </section>
@@ -104,11 +107,12 @@
                 <img width="300" src="images/testable-js-4.png" alt="" style="position:relative;;border: 2px solid #8F8C8C; float: left;"/>
                 <p  class="fragment roll-in" style="font-size: 80%; position: relative;right: 70px;">When <span style="color:#f04e98;">'add'</span> is called</p>
                 <ul style="font-size: 70%; ">
-                    <li class="fragment roll-in"><span style="color:#f04e98;">TodItem.generate</span>( todoMessage )</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">TodoItem.generate</span>( todoMessage )</li>
+                    <li class="fragment roll-in"><span style="color:#f04e98;">TodoList.append</span>( todoItem )</li>
                 </ul>
             </section>
             <section>
-                <p><span style="color:#f04e98;">TodItem</span>.generate</p>
+                <p><span style="color:#f04e98;">TodoItem</span>.generate</p>
                 <ul style="font-size: 70%; ">
                     <li class="fragment roll-in"><span style="color:#f04e98;">generate</span> todo item element</li>
                     <li class="fragment roll-in"><span style="color:#f04e98;">handle event</span>: checked</li>
@@ -123,12 +127,15 @@
                 </ul>
             </section>
             <section>
-                <ul style="font-size: 80%;">
-                    <li class="fragment roll-in"><span style="color:#f04e98;">document.ready</span> for todo-add</li>
-                    <li class="fragment roll-in"><span style="color:#f04e98;">TODO</span> required by document ready handler</li>
-                    <li class="fragment roll-in"><span style="color:#f04e98;">ThingsTodo</span> required by document ready handler</li>
-                    <li class="fragment roll-in"><span style="color:#f04e98;">TodoItem</span> required by TODO</li>
-                </ul>
+                <!--<ul style="font-size: 80%;">-->
+                    <!--<li class="fragment roll-in"><span style="color:#f04e98;">document.ready</span> for todo-add</li>-->
+                    <!--<li class="fragment roll-in"><span style="color:#f04e98;">TodoList</span> required by document ready handler</li>-->
+                    <!--<li class="fragment roll-in"><span style="color:#f04e98;">ThingsTodo</span> required by document ready handler</li>-->
+                    <!--<li class="fragment roll-in"><span style="color:#f04e98;">TodoItem</span> required by TodoList</li>-->
+                <!--</ul>-->
+                <section>
+                    <p><img width="500" src="images/testable-js-2.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
+                </section>
             </section>
         </section>
         <section>
