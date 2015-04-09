@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JavaScript Libraries</title>
+    <title>Testable JavaScript</title>
     <meta name="description" content="A presentation for JavaScript beginers">
     <meta name="author" content="Hakim El Hattab">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -43,6 +43,70 @@
             <p>Wang Ni</p>
         </section>
 
+
+        <section>
+            <section>
+                <img src="images/todo.png" width="350" style="border: 2px solid #8F8C8C"/>
+                <ul style="font-size: 70%;  position: relative;bottom:15px;margin-left: 25px;">
+                    <li><span style="color:#f04e98;">Introduce</span> underscore</li>
+                    <li><span style="color:#f04e98;">Create</span> todo list response</li>
+                    <li><span style="color:#f04e98;">Fetch</span> todo list from server</li>
+                    <li><span style="color:#f04e98;">Render</span> todo list on the page</li>
+                    <li><span style="color:#f04e98;">Add/Remove</span> todo item on the page</li>
+                    <li><span style="color:#f04e98;">Change</span> number of things</li>
+                    <li><span style="color:#f04e98;">Check</span> todo item on the page</li>
+                    <p style="line-height: 8px;">If you have time:</p>
+                    <li><span style="color:#f04e98;">Fade out</span> the focus question & input</li>
+                    <li><span style="color:#f04e98;">Fade in</span> the focus of today</li>
+                    <!-- <li>*<span style="color:#f04e98;">Draggable</span> todo items</li> -->
+                </ul>
+            </section>
+            <section>
+                <p>Let's implement together :)</p>
+                <img src="images/todo-panel.png" width="350" style="border: 2px solid #8F8C8C"/>
+                <ul style="font-size: 70%;  position: relative;bottom:15px;margin-left: 25px;">
+                    <li style="color: grey;text-decoration: line-through;"><span style="color:#f04e98;">Introduce</span> underscore</li>
+                    <li style="color: grey;text-decoration: line-through;"><span style="color:#f04e98;">Create</span> todo list response</li>
+                    <li><span style="color:#f04e98;">Fetch</span> todo list from server</li>
+                    <li><span style="color:#f04e98;">Render</span> todo list on the page</li>
+                    <li><span style="color:#f04e98;">Add/Remove</span> todo item on the page</li>
+                    <li><span style="color:#f04e98;">Change</span> number of things</li>
+                    <li><span style="color:#f04e98;">Check</span> todo item on the page</li>
+                    <!--<p style="line-height: 8px;">If you have time:</p>-->
+                    <!--<li><span style="color:#f04e98;">Fade out</span> the focus question & input</li>-->
+                    <!--<li><span style="color:#f04e98;">Fade in</span> the focus of today</li>-->
+                    <!-- <li>*<span style="color:#f04e98;">Draggable</span> todo items</li> -->
+                </ul>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Fetch</span> todo list from server</p>
+
+                <p class="fragment roll-in" style="font-size: 70%; font-weight: bold">git clone <a href="https://github.com/Jeanne-WN/training-todo.git">https://github.com/Jeanne-WN/training-todo.git</a></p>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Render</span> todo list on the page</p>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Add/Remove</span> todo item on the page</p>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Change</span> number of things</p>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Check</span> todo item on the page</p>
+                <!--<p style="font-size: 70%;  position: relative;top:15px;margin-left: -100px;">Things might be useful</p>-->
+                <ul style="font-size: 70%;  position: relative;top:15px;margin-left: -100px;">
+                    <li><span style="color:#f04e98;">not()</span> selector</li>
+                    <li>checkbox's <span style="color:#f04e98;">click()</span> function</li>
+                    <li><span style="color:#f04e98;">classList</span></li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
+            <h2>Testable JavaScript</h2>
+            <p>Wang Ni</p>
+        </section>
         <section>
             <section>
                 <h4>How to <span style="color:#f04e98;">test</span> JavaScript code ?</h4>
@@ -54,33 +118,40 @@
                 <p><img width="200" src="images/jasmine_logo.svg" alt="" style="border: none; box-shadow: none; background: none;"/></p>
                 <p style="font-size: 70%;">Behavior-driven development framework for testing JavaScript code.</p>
             </section>
+            <!--<section>-->
+            <!--<p>And <span style="color:#f04e98;">Mocha</span> ?</p>-->
+            <!--</section>-->
+            <!--<section>-->
+            <!--<p><img width="300" src="images/mocha-logo.png" alt="" style="border: none; box-shadow: none; background: none;"/></p>-->
+            <!--<p style="font-size: 70%;">A feature-rich JavaScript test framework running on node.js and the browser, making asynchronous testing simple and fun.</p>-->
+            <!--</section>-->
+
             <section>
-                <p>And <span style="color:#f04e98;">Mocha</span> ?</p>
+                <p><img width="700" src="images/test-js-3.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
+                <p>
+                    <span class="fragment roll-in" style="margin-right: 5%;">describe</span>
+                    <span class="fragment roll-in" style="margin-right: 5%;">it</span>
+                    <span class="fragment roll-in" style="margin-right: 5%;">expect</span>
+                    <span class="fragment roll-in" style="margin-right: 5%;">AAA</span>
+                </p>
             </section>
-            <section>
-                <p><img width="300" src="images/mocha-logo.png" alt="" style="border: none; box-shadow: none; background: none;"/></p>
-                <p style="font-size: 70%;">A feature-rich JavaScript test framework running on node.js and the browser, making asynchronous testing simple and fun.</p>
-            </section>
+
             <section>
                 <p><img width="500" src="images/test-js-1.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
                 <p class="fragment roll-in"><img width="500" src="images/test-js-2.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
             </section>
             <section>
-                <p><img width="700" src="images/test-js-3.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
-            </section>
-            <section>
-                spy & ajax test
+                <p>JavaScript TDD Demo</p>
             </section>
         </section>
-
         <section>
             <section>
                 <h4>TODO</h4>
                 <p><img width="500" src="images/todo-panel.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
             </section>
             <section>
-                <p>How to <span style="color:#f04e98;">test</span> this code ?</p>
-                <p><img width="800" src="images/testable-todo-1.png" alt="" style="border: 2px solid #8F8C8C; "/></p>
+                <p>How to <span style="color:#f04e98;">test our code </span> ?</p>
+                <!--<p><img width="800" src="images/testable-todo-1.png" alt="" style="border: 2px solid #8F8C8C; "/></p>-->
             </section>
         </section>
 
