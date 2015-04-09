@@ -45,9 +45,11 @@
 
         <section>
             <section>
-                <h4>TODO</h4>
-                <img src="images/todo.png" width="800" style="border: 2px solid #8F8C8C"/>
-                </section>
+                <img src="images/mockup.jpg" width="800" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <img src="images/momentum.png" width="200" style="border: none; box-shadow: none; background: none;"/>
+            </section>
             <section>
                 <ul>
                     <li class="fragment roll-in"><span style="color:#f04e98;">Fetch</span> todo list from server</li>
@@ -55,7 +57,7 @@
                     <li class="fragment roll-in"><span style="color:#f04e98;">Add/Remove</span> todo item on the page</li>
                     <li class="fragment roll-in"><span style="color:#f04e98;">Check</span> todo item on the page</li>
                     <li class="fragment roll-in"><span style="color:#f04e98;">Change</span> number of things</li>
-                    <!-- <li class="fragment roll-in"><span style="color:#f04e98;">Draggable</span> todo items</li> -->
+                    <!--<li class="fragment roll-in"><span style="color:#f04e98;">Draggable</span> todo items</li>-->
                 </ul>
             </section>
             <section>
@@ -100,35 +102,57 @@
                 <p><img src="images/todo-plain-js-3.png" width="600" style="border: 2px solid #8F8C8C; "/></p>
             </section>
             <section>
+                <p>What about <span style="color:#f04e98;">this one</span> ?</p>
+                <p><img src="images/todo-item-add-event-2.png" width="600" style="border: 2px solid #8F8C8C; "/></p>
+            </section>
+            <section>
                 <p><img src="images/jquery-example.png" width="600" style="border: 2px solid #8F8C8C; "/></p>
             </section>
             <section>
-                <p>Does anyone know <span style="color:#f04e98;">CSS3 selector</span> ?</p>
+                <p>What about <span style="color:#f04e98;">elements which will be added later</span> ?</p>
+            </section>
+            <section>
+                <p><span style="color:#f04e98;">Delegated events</span></p>
+                <p><img src="images/todo-item-add-event-3.png" width="600" style="border: 2px solid #8F8C8C; "/></p>
+                <p><img src="images/delegated-events.png" width="600" style="border: 2px solid #8F8C8C; "/></p>
+            </section>
+            <section>
+                <p>Does the <span style="color:#f04e98;">selector</span> look familiar ?</p>
             </section>
             <section>
                 <p><span style="color:#f04e98;">$()</span> selects elements By: </p>
                 <ul style="font-size: 65%; margin-left: 0;">
-                    <li class="fragment roll-in" >ID, </li>
-                    <li class="fragment roll-in" >Class Name, </li>
-                    <li class="fragment roll-in" >Tag, </li>
-                    <li class="fragment roll-in" >Attribute, </li>
-                    <li class="fragment roll-in" >Compound CSS Selector, </li>
-                    <li class="fragment roll-in" >Pseudo-Selectors</li>
+                    <li >ID, </li>
+                    <li >Class Name, </li>
+                    <li >Tag, </li>
+                    <li >Attribute, </li>
+                    <li >Compound CSS Selector, </li>
+                    <li >Pseudo-Selectors</li>
                 </ul>
                 </p>
-                <p class="fragment roll-in"><img src="images/jquery-selector.png" width="300" style="border: 2px solid #8F8C8C; "/></p>
             </section>
             <section>
                 <p>Simple <span style="color:#f04e98;">Event handler</span> to selections</p>
                 <ul style="font-size: 65%; margin-left: 0;">
-                    <li class="fragment roll-in" >window.load <span style="color:#f04e98;">vs.</span> $(document).ready</li>
-                    <li class="fragment roll-in" >.click(), .focus(), ..</li>
-                    <li class="fragment roll-in" >.on(),</li>
-                    <li class="fragment roll-in" >.off(), </li>
-                    <li class="fragment roll-in" >.one(),</li>
-                    <li class="fragment roll-in" >event object</li>
+                    <li>.click(), .focus(), ..</li>
+                    <li>.on()</li>
+                    <li>.off(), </li>
+                    <li>.one(),</li>
+                    <li>window.onload <span style="color:#f04e98;">vs.</span> $(document).ready</li>
                 </ul>
-                <p class="fragment roll-in"><img src="images/jquery-example.png" width="600" style="border: 2px solid #8F8C8C; "/></p>
+            </section>
+
+            <section>
+                <p>jQuery also provides <span style="color:#f04e98;">easy way</span> to:</p>
+                <ul style="font-size: 65%; margin-left: 0;">
+                    <li><span style="color:#f04e98;">getting & setting</span>  information about elements</li>
+                    <li><span style="color:#f04e98;">moving, copying, removing</span> elements</li>
+                    <li><span style="color:#f04e98;">creating</span> new elements</li>
+                </ul>
+            </section>
+
+            <section>
+                <p>And <span style="color:#f04e98;"> Animations/Effects </span></p>
             </section>
 
             <section>
@@ -155,11 +179,12 @@
 
                         xmlhttp.onreadystatechange=function() {
                             if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-                                document.getElementById("ajax-result").innerHTML=xmlhttp.responseText;
+                                var result = JSON.parse(xmlhttp.responseText);
+                                document.getElementById("ajax-result").innerHTML=result.greeting;
                             }
-                        }
+                        };
 
-                        xmlhttp.open("GET","result.txt",true);
+                        xmlhttp.open("GET","result",true);
                         xmlhttp.send();
                     }
                 </script>
@@ -181,10 +206,10 @@
             <section>
                 <p><span style="color:#f04e98;"> AJAX </span> in JQuery</p>
                 <ul style="font-size: 70%; margin-left: 10px;">
-                    <li class="fragment roll-in" >$.ajax()</li>
-                    <li class="fragment roll-in" >success, error, complete, timeout</li>
-                    <li class="fragment roll-in" >response dataType</li>
-                    <li class="fragment roll-in" >$.get(), $.post()</li>
+                    <li>$.ajax()</li>
+                    <li>success, error, complete, timeout</li>
+                    <li>response dataType</li>
+                    <li>$.get(), $.post()</li>
                 </ul>
             </section>
             <section>
@@ -192,6 +217,10 @@
                 <p class="fragment roll-in"><span style="color:#f04e98;">Cross browser</span> issues</p>
                 <!--a design that renders perfectly in Internet Explorer 8 but may not run that well in Mozilla Firefox, or an interface component you’ve spent days handcrafting works beautifully in all major browsers except Opera on Linux.-->
                 <!--The jQuery team is aware of the cross-browser issues, and more importantly they understand why these issues occur. They have written this knowledge into the library—so jQuery works around the caveats for you. Most of the code you write will run exactly the same on all the major browsers.-->
+            </section>
+            <section>
+                <p><img width="300" src="images/logo-jquery.png" alt="" style="border: none; background: none; box-shadow: none;"/></p>
+                <p><span style="color:#f04e98;">Useful DSL </span> for front-end developers</p>
             </section>
         </section>
 
@@ -234,18 +263,44 @@
                 <p><span style="color:#f04e98;">Chaining</span></p>
                 <img src="images/underscore-func-2.png" width="700" style="border: 2px solid #8F8C8C"/>
             </section>
+            <section>
+                <p><img src="images/logo-undercorejs.png" width="300" style="border: none; box-shadow: none; background: none;"/></p>
+                <p><span style="color:#f04e98;">Functional Programming Helpers </span> for JavaScript</p>
+            </section>
         </section>
 
         <section>
             <section>
-                <h4>Adding JS libraries to web page</h4>
+                <h4><span style="color:#f04e98;">Adding</span> JS libraries <span style="color:#f04e98;">to web page</span></h4>
             </section>
             <section>
-                <p><span style="color:#f04e98;">Where</span> should we require <span style="color:#f04e98;">JS libraries</span> ?</p>
+                <p>
+                  <span style="color:#f04e98;">Download</span> & <span style="color:#f04e98;">Add to HTML</span>
+                </p>
             </section>
-            <!-- <section>
-                <p><span style="color:#f04e98;">&#60;head&#62;</span> vs. <span style="color:#f04e98;">&#60;body&#62;</span></p>
-            </section> -->
+            <section>
+                <h3>Download - from jquery.com</h3>
+                <img src="images/download-jquery-1.png" width="700" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <h3>Download - from CDN<span style="font-family: 'Open Sans'; font-size: 50%; font-style:italic;"> Content Delivery Network</span></h3>
+                <img src="images/download-jquery-2.png" width="700" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <h3>Download - with Bower
+                    <img src="images/bower-logo.png" width="70" style="border: none; box-shadow: none;background: none;position: relative;top:15px;left: 5px;"/>
+                </h3>
+                <img src="images/download-jquery-3.png" width="350" style="border: 2px solid #8F8C8C"/>
+            </section>
+            <section>
+                <img src="images/bower-logo-1.png" width="300" style="border: none; box-shadow: none;background: none"/>
+            </section>
+            <section>
+                <p>What else should we highlight while <span style="color:#f04e98;">adding JS libraries to our HTML </span>?</p>
+            </section>
+            <!--<section>-->
+                <!--<p><span style="color:#f04e98;">&#60;head&#62;</span> vs. <span style="color:#f04e98;">&#60;body&#62;</span></p>-->
+            <!--</section>-->
             <section>
                 <p><strong>Always load <span style="color:#f04e98;">before</span> our own JS sources.</strong></p>
             </section>
@@ -264,6 +319,11 @@
                 <img src="images/todo.png" width="800" style="border: 2px solid #8F8C8C"/>
             </section>
             <section>
+                <p><img src="images/npm-logo.PNG" width="150" style="border: none; box-shadow: none;background: none"/></p>
+                <img src="images/grunt-log.png" width="180" style="border: none; box-shadow: none;background: none;margin-right: 50px;"/>
+                <img src="images/bower-logo-1.png" width="200" style="border: none; box-shadow: none;background: none"/>
+            </section>
+            <section>
                 <img src="images/todo.png" width="350" style="border: 2px solid #8F8C8C"/>
                 <ul style="font-size: 70%;  position: relative;bottom:15px;margin-left: 25px;">
                     <li><span style="color:#f04e98;">Introduce</span> underscore</li>
@@ -273,8 +333,12 @@
                     <li><span style="color:#f04e98;">Add/Remove</span> todo item on the page</li>
                     <li><span style="color:#f04e98;">Change</span> number of things</li>
                     <li><span style="color:#f04e98;">Check</span> todo item on the page</li>
+                    <p style="line-height: 8px;">If you have time:</p>
+                    <li><span style="color:#f04e98;">Fade out</span> the focus question & input</li>
+                    <li><span style="color:#f04e98;">Fade in</span> the focus of today</li>
                     <!-- <li>*<span style="color:#f04e98;">Draggable</span> todo items</li> -->
                 </ul>
+                <p class="fragment roll-in">How to fetch todo list from server ?</p>
             </section>
         </section>
 
